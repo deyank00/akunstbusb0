@@ -1,0 +1,30 @@
+proxies:
+- name: TROJAN ready 1
+  type: trojan
+  server: 104.17.3.81
+  port: 443
+  password: e41da19e-3964-4132-84b2-81ea0c7514a0
+  udp: true
+  sni: do1.readyku.site
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan-ws
+    headers:
+      Host: do1.readyku.site
+  interface-name: eth1
+
+- name: TROJAN tasari rg
+  type: trojan
+  server: 104.17.3.81
+  port: 443
+  password: e41da19e-3964-4132-84b2-81ea0c7514a0
+  udp: true
+  sni: do1.readyku.site
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan-ws
+    headers:
+      Host: do1.readyku.site
+  interface-name: eth1
